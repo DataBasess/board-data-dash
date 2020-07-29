@@ -19,6 +19,32 @@
         crossorigin="anonymous"></script>
 </head>
 <style>
+    body {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+        border: 2px solid #7d49b8;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+
+    .logo:hover {
+        animation: spin-y 2s linear infinite;
+        box-shadow: 0 0 20px 2px #7d49b8;
+    }
+
+    @keyframes spin-y {
+        from {
+            transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
     .jumbotron {
         background-color: #333;
         color: #fff;
@@ -28,6 +54,10 @@
         background-color: #333;
         color: #fff;
     }
+    .card:hover {
+        box-shadow: 0 0 20px 2px #7d49b8;
+        transform: scale(1.10, 1.10);
+    }
 </style>
 
 <body data-gr-c-s-loaded="true">
@@ -35,6 +65,7 @@
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
+                <img src="./DEV1_DATA Dash_Character-Bunny.jpg" class="logo" alt="">
                 <h1>BI Gallery- Bunny</h1>
                 <br>
                 <p class="lead text-light">ท่านสามารถเลื่อนดูผลงานของแต่ละทีมได้ในหน้านี้ โดยสามารถกดเล่น Graph
@@ -200,7 +231,8 @@
                 <div class="col-12 mb-3">
                     <div class="card">
                         <div class="card-header">
-                            Vote here (หากท่านมองไม่เห็นตัวเลือก ให้กดปุ่ม "Fill out the form" ก่อน เพื่อทำการ log in ด้วยอีเมลบริษัทนะครับ)
+                            Vote here (หากท่านมองไม่เห็นตัวเลือก ให้กดปุ่ม "Fill out the form" ก่อน เพื่อทำการ log in
+                            ด้วยอีเมลบริษัทนะครับ)
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="1200px"
