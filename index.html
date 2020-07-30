@@ -12,7 +12,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
         body {
-            background-color: rgba(0, 0, 0, 0.5);
+            /* background-image: url(./BG_DataDash.png); */
+            background-color: rgba(0, 0, 0, 0.1);
+            /* background-position: center; */
+            /* Center the image */
+            /* background-repeat: no-repeat; */
+            /* Do not repeat the image */
+            /* background-size: cover; */
+            /* Resize the background image to cover the entire container */
         }
 
         .nav {
@@ -20,31 +27,19 @@
         }
 
         .logo {
-            border: 2px solid #7d49b8;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            /* border: 2px solid #7d49b8; */
+            /* border-radius: 50%; */
+            height: 150px;
+            /* width: 200px; */
         }
 
-        .logo:hover {
-            animation: spin-y 2s linear infinite;
-            box-shadow: 0 0 20px 2px #7d49b8;
-        }
-
-        @keyframes spin-y {
-            from {
-                transform: rotateY(0deg);
-            }
-
-            to {
-                transform: rotateY(360deg);
-            }
-        }
-
-        .jumbotron {
-            background-color: initial;
-            color: #fff;
-            height: 100vh;
+        .jumbotron-a {
+            background-image: url(./BG_DataDash.png);
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
         }
 
         .btn-rank {
@@ -52,11 +47,11 @@
         }
 
         .img-rank {
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
-            border: 2px solid #7d49b8;
-            box-shadow: 0 0 20px 2px #7d49b8;
+            /* border: 2px solid #7d49b8; */
+            /* box-shadow: 0 0 20px 2px #7d49b8; */
         }
 
         .img-rank:hover {
@@ -77,19 +72,25 @@
 
         .avatar {
             position: relative;
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
         }
 
         .btn-name {
             position: absolute;
             color: #ecb10d;
+            border: none;
             background-color: rgb(212, 27, 27);
             border-radius: 5px;
             font-size: 20px;
             font-weight: 700;
             bottom: 20px;
-            left: 50px;
+            /* left: 50px; */
+        }
+
+        .tag-img {
+            /* height: 150px; */
+            width: 50%;
         }
     </style>
 </head>
@@ -97,12 +98,10 @@
 <body>
     <div class="col-12 nav">
         <div class="row justify-content-center">
-            <div class="col-lg-2 row justify-content-center">
-                <div class="avatar">
-                    <img src="./Logo Data Club-01.png" class="logo mx-auto" alt="">
-                </div>
+            <div class="col-auto row justify-content-center">
+                <img src="./LogodataClub.png" class="logo" alt="">
             </div>
-            <div class="col-lg-9 d-flex align-items-center justify-content-center">
+            <div class="col-lg-auto d-flex align-items-center justify-content-center">
                 <div class="p-3">
                     <h1 class="text-light">เพียงโหวตผลงานทีมที่ชื่นชอบ ลุ้นรับ iPad ทันที</h1>
                     <h5 class="text-light">นอกจาก iPad แล้วยังมีรางวัลอื่นๆรวมมูลค่า 7000 บาทอีกด้วย! โหวตทั้งระดับ
@@ -114,20 +113,23 @@
             </div>
         </div>
     </div>
-    <div class="col-12">
+    <div class="col-12 jumbotron-a">
         <div class="row justify-content-center">
             <a href="./bunny.html" target="_blank" class="btn btn-rank">
                 <div class="avatar">
                     <img src="./DEV1_DATA Dash_Character-Bunny.jpg" class="img-rank" alt="">
-                    <button class="btn-name">Bunny</button>
+                    <button class="btn-name" style="left: 40px;">Bunny</button>
                 </div>
             </a>
-            <a href="./magincian.html" target="_blank" class="btn btn-rank">
+            <a href="./magician.html" target="_blank" class="btn btn-rank">
                 <div class="avatar">
                     <img src="./DEV1_DATA Dash_Character-Magician.jpg" class="img-rank" alt="">
-                    <button class="btn-name">Magician</button>
+                    <button class="btn-name" style="left: 25px;">Magician</button>
                 </div>
             </a>
+        </div>
+        <div class="row justify-content-center">
+            <img src="./Tag_DataDash.png" class="tag-img" alt="">
         </div>
     </div>
 
