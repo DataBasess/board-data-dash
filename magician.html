@@ -5,18 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BI Gallery- Magician</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <style>
     body {
@@ -60,6 +52,7 @@
         background-color: #333;
         color: #fff;
     }
+
     .card:hover {
         box-shadow: 0 0 20px 2px #7d49b8;
         transform: scale(1.10, 1.10);
@@ -74,7 +67,8 @@
                 <img src="./DEV1_DATA Dash_Character-Magician.jpg" class="logo" alt="">
                 <h1>BI Gallery- Magician</h1>
                 <br>
-                <p class="lead text-light">ท่านสามารถเลื่อนดูผลงานของแต่ละทีมได้ในหน้านี้ [Hint: ลองกดเล่นส่วนต่างๆของกราฟดูสิ!!!]</p>
+                <p class="lead text-light">ท่านสามารถเลื่อนดูผลงานของแต่ละทีมได้ในหน้านี้ [Hint:
+                    ลองกดเล่นส่วนต่างๆของกราฟดูสิ!!!]</p>
                 <p class="lead text-light">แล้วอย่าลืมเลื่อนไปด้านล่างสุดเพื่อโหวตผลงานที่ชื่นชอบด้วยนะ!</p>
             </div>
         </section>
@@ -82,8 +76,9 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            @TEAM13_AIM
+                        <div class="card-header d-flex flex-row justify-content-between">
+                            <div class="">TEAM13_AIM</div>
+                            <div class="">NYC Taxi Trip</div>
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="500px"
@@ -94,8 +89,9 @@
                 </div>
                 <div class="col-12 mb-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            @TEAM14_HR 5.0
+                        <div class="card-header d-flex flex-row justify-content-between">
+                            <div class="">TEAM14_HR 5.0</div>
+                            <div class="">World Development</div>
                         </div>
                         <div class="card-body">
                             <div class='tableauPlaceholder' id='viz1596009927474' style='position: relative'>
@@ -119,15 +115,16 @@
                                     <param name='language' value='en' />
                                     <param name='filter' value='publish=yes' /></object></div>
                             <script type='text/javascript'>
-                                var divElement = document.getElementById('viz1596009927474'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = '500px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                                var divElement = document.getElementById('viz1596009927474'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = '1050px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
                             </script>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 mb-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            @TEAM15_Dash Dash Dash
+                        <div class="card-header d-flex flex-row justify-content-between">
+                            <div class="">TEAM15_Dash Dash Dash</div>
+                            <div class="">World Development</div>
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="500px"
@@ -138,20 +135,22 @@
                 </div>
                 <div class="col-12 mb-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            @TEAM16_TGID
+                        <div class="card-header d-flex flex-row justify-content-between">
+                            <div class="">TEAM16_TGID</div>
+                            <div class="">NYC Taxi Trip</div>
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="500px"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiODQ5YjE1NTktZjY5ZS00ZGNiLTk0NzItODFjZDViNjE4ZWZkIiwidCI6IjVkYjhiZjBlLTg1OTItNGVkMC04MmIyLWE2ZDRkNzc5MzNkNCIsImMiOjEwfQ%3D%3D"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiODQ5YjE1NTktZjY5ZS00ZGNiLTk0NzItODFjZDViNjE4ZWZkIiwidCI6IjVkYjhiZjBlLTg1OTItNGVkMC04MmIyLWE2ZDRkNzc5MzNkNCIsImMiOjEwfQ%3D%3D&pageName=ReportSectiona9962662ccb6db1b8001"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 mb-3">
                     <div class="card">
-                        <div class="card-header text-center">
-                            @TEAM17_SFT Cute boy
+                        <div class="card-header d-flex flex-row justify-content-between">
+                            <div class="">TEAM17_SFT Cute boy</div>
+                            <div class="">World Development</div>
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="500px"
@@ -160,11 +159,14 @@
                         </div>
                     </div>
                 </div>
-
+                <h3 class="text-light">***ผู้เข้าแข่งขันสร้างผลงานทั้งหมดนี้ภายในเวลา 3 ชั่วโมง ...คุณเองก็ทำได้!!!
+                    ติดต่อสอบถามเกี่ยวกับซอฟต์แวร์ Power BI หรือ Tableau ได้ที่ Data Club [QR_DataClub] หรือโทร
+                    02-586-5614</h3>
                 <div class="col-12 mb-3">
                     <div class="card">
                         <div class="card-header">
-                            Vote here (หากท่านมองไม่เห็นตัวเลือก ให้กดปุ่ม "Fill out the form" ก่อน เพื่อทำการ log in ด้วยอีเมลบริษัทนะครับ)
+                            Vote here (หากท่านมองไม่เห็นตัวเลือก ให้กดปุ่ม "Fill out the form" ก่อน เพื่อทำการ log in
+                            ด้วยอีเมลบริษัทนะครับ)
                         </div>
                         <div class="card-body">
                             <iframe width="100%" height="1000px"
